@@ -31,7 +31,7 @@ const Product = ({products}) => {
   }
 
   return (
-      <div className='h-[23vw] w-[23vw] p-5 flex flex-col justify-between items-center'>
+      <div className=' mt-5 ml-3 hover:shadow-[0_20px_50px_rgba(60,_60,_60,_0.7)] duration-500 rounded-xl h-[23vw] w-[23vw] p-5 flex flex-col justify-between items-center border-1 border-black border-solid'>
         <div className='overflow-hidden h-[500px] w-[200px]'>
         <Image 
         src = {products.image}
@@ -42,7 +42,7 @@ const Product = ({products}) => {
         <div className='flex flex-col justify-between items-center mt-3 w-full'>
           <p><b>{products.Name}</b></p>
           <p>{products.Price}</p>
-          {!quan? <div className='flex items-center justify-normal mt-2 gap-2 w-full'>
+          {!quan? <div className='flex items-center justify-between mt-2 px-2 w-full'>
             <button onClick={inc} className="px-2 h-full flex items-center justify-center"><p className="border-2     duration-300 rounded-3xl p-3 hover:bg-black hover:text-white ">Add To Cart</p></button>
             <button className="px-2 h-full flex items-center justify-center"><p className="border-2 duration-300 rounded-3xl p-3 hover:bg-white hover:text-black bg-zinc-800 text-white">Buy Now</p></button>
           </div>:<div className='flex items-center justify-between border-2 border-black solid w-[60%] p-2 rounded-lg mt-2 gap-2'>

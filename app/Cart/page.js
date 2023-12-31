@@ -23,7 +23,7 @@ const page = () => {
   return (
     <div>
       <NavBar />
-      <div className="h-screen w-full flex items-center">
+      <div className="h-full w-full flex items-center">
       <div className="flex gap-4 items-center flex-wrap h-screen w-[75%] border-2 border-r-zinc-800">{items}</div>
       <div className="h-screen w-[25%]"><Payment details = {newcd}/></div>
       </div>

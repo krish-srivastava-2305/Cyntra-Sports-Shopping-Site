@@ -4,7 +4,7 @@ import Image from 'next/image';
 const CartProduct = ({products}) => {
   return (
     
-    <div className='h-[23vw] w-[23vw] p-5 flex flex-col justify-between items-center'>
+    <div className=' mt-5 ml-3 hover:shadow-[0_20px_50px_rgba(60,_60,_60,_0.7)] duration-500 rounded-xl h-[23vw] w-[23vw] p-5 flex flex-col justify-between items-center border-1 border-black border-solid'>
         <div className='overflow-hidden h-[500px] w-[200px]'>
         <Image 
         src = {products.image}
